@@ -1,0 +1,32 @@
+<div id="top">
+    <div id='left'> <form (submit)="onSubmit()">
+        Initial Power Level: <input id='power' type="number" name='powerLevel'
+        required
+        min = 1
+        max = 100
+        [(ngModel)]="user.powerLevel"
+        #powerLevel="ngModel">
+        <input type="submit" value="Calculate Powers">
+    </form>
+
+    {{ user | json }}</div>
+
+    <div id='right'>
+        <img src="../assets/supersaiyan.jpeg" alt="super saiyan">
+    </div>
+   
+</div>
+<div id="mid">
+    <app-saiyan [powerLevel]='user.outputPower'></app-saiyan>
+
+    <app-saiyan [powerLevel]='user.outputPower * 10'></app-saiyan>
+
+    <app-saiyan [powerLevel]='user.outputPower * 90'></app-saiyan>
+</div>
+<div id="bottom">
+    <app-saiyan [powerLevel]='user.outputPower * 150'></app-saiyan>
+
+    <app-saiyan [powerLevel]='user.outputPower * 250'></app-saiyan>
+
+    <app-saiyan [powerLevel]='user.outputPower * 500'></app-saiyan>
+</div>

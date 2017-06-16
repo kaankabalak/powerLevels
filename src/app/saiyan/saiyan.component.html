@@ -1,0 +1,14 @@
+<div id="wrapper">
+  <p>
+    Power Level: {{powerLevel}}
+  </p>
+  <div *ngIf='powerLevel == 50000'>
+    <h2>The One</h2>
+  </div>
+  <div *ngIf='powerLevel > 20000 && powerLevel < 50000'>
+    <h2>Superlative!</h2>
+  </div>
+  <div *ngIf='powerLevel > 9000 && powerLevel < 20000'>
+    <h2>Over 9000!</h2>
+  </div>
+</div>

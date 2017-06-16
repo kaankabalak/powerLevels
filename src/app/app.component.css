@@ -1,0 +1,26 @@
+#top {
+    display: block;
+}
+#left {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 200px;
+}
+#right {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 200px;
+    margin-left: 312px;
+}
+img {
+    margin-left: 95px;
+    height: 100%;
+}
+#power{
+    width: 35px;
+}
+#bottom {
+    display: 'block';
+}
